@@ -1,0 +1,90 @@
+{
+  "_from": "@js-spider/npm-script-process",
+  "_id": "@js-spider/npm-script-process@1.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-kjKRuvBRbRLA0WnHbZUTaAqvDp4KViAQ4FPaEifldcDMQx9WRiHRgKe6uyiMm2Y2eF68+X+S6Vs8pdg2d39ZLg==",
+  "_location": "/@js-spider/npm-script-process",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@js-spider/npm-script-process",
+    "name": "@js-spider/npm-script-process",
+    "escapedName": "@js-spider%2fnpm-script-process",
+    "scope": "@js-spider",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@js-spider/npm-script-process/-/npm-script-process-1.0.5.tgz",
+  "_shasum": "41567b835a2a5752699d2bf60a65251b774f98a6",
+  "_spec": "@js-spider/npm-script-process",
+  "_where": "/Users/admin/TEST/rmll",
+  "author": {
+    "name": "js-spider",
+    "email": "455381391@qq.com"
+  },
+  "bin": {
+    "npmscript": "./bin.js"
+  },
+  "bugs": {
+    "url": "https://github.com/js-spider/npm-script-demo/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "fs-extra": "^8.1.0",
+    "minimist": "^1.2.0",
+    "resolve-bin": "^0.4.0",
+    "write-json-file": "^4.2.0"
+  },
+  "deprecated": false,
+  "description": "",
+  "devDependencies": {},
+  "homepage": "https://github.com/js-spider/npm-script-demo#readme",
+  "license": "MIT",
+  "name": "@js-spider/npm-script-process",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/js-spider/npm-script-demo.git"
+  },
+  "scripts": {
+    "deploy": "npm publish --access=public",
+    "install": "node ./src/npmscripts.js --env=install",
+    "postinstall": "node ./src/npmscripts.js --env=postinstall",
+    "postpack": "node ./src/npmscripts.js --env=postpack",
+    "postpublish": "node ./src/npmscripts.js --env=postpublish",
+    "postrestart": "node ./src/npmscripts.js --env=postrestart",
+    "postshrinkwrap": "node ./src/npmscripts.js --env=postshrinkwrap",
+    "poststart": "node ./src/npmscripts.js --env=poststart",
+    "poststop": "node ./src/npmscripts.js --env=poststop",
+    "posttest": "node ./src/npmscripts.js --env=posttest",
+    "postuninstall": "node ./src/npmscripts.js --env=postuninstall",
+    "postversion": "node ./src/npmscripts.js --env=postversion",
+    "preinstall": "node ./src/npmscripts.js --env=preinstall",
+    "prepack": "node ./src/npmscripts.js --env=prepack",
+    "prepare": "node ./src/npmscripts.js --env=prepare",
+    "prepublish": "node ./src/npmscripts.js --env=prepublish",
+    "prepublishOnly": "node ./src/npmscripts.js --env=prepublishOnly",
+    "prerestart": "node ./src/npmscripts.js --env=prerestart",
+    "preshrinkwrap": "node ./src/npmscripts.js --env=preshrinkwrap",
+    "prestart": "node ./src/npmscripts.js --env=prestart",
+    "prestop": "node ./src/npmscripts.js --env=prestop",
+    "pretest": "node ./src/npmscripts.js --env=pretest",
+    "preuninstall": "node ./src/npmscripts.js --env=preuninstall",
+    "preversion": "node ./src/npmscripts.js --env=preversion",
+    "publish": "node ./src/npmscripts.js --env=publish",
+    "restart": "node ./src/npmscripts.js --env=restart",
+    "shrinkwrap": "node ./src/npmscripts.js --env=shrinkwrap",
+    "start": "node ./src/npmscripts.js --env=start",
+    "stop": "node ./src/npmscripts.js --env=stop",
+    "test": "node ./src/npmscripts.js --env=test",
+    "uninstall": "node ./src/npmscripts.js --env=uninstall",
+    "version": "node ./src/npmscripts.js --env=version"
+  },
+  "version": "1.0.5"
+}
