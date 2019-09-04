@@ -11,16 +11,15 @@ class Npmscript{
         this.currentPath = argv.currentPath;
         this.npmscriptPath = null;
         this.packageName = '@js-spider/npm-script-process';
-        this.binName = 'npmscript';
         this.errorMess = [];
     }
     run(){
         let ls = null;
-        console.log('');
-        if(!this.env){
-            console.log(chalk.red(`npmscript need params`));
+        if(this.env.length<1){
+            console.log(chalk.red(`params is required!`));
             return process.exit(1);
         }
+        console.log('');
         if(Array.isArray(this.env) && this.env[0] === 'destory'){
             console.log(chalk.yellow(`当前执行的操作：npm uninstall ${this.packageName} ，触发相关操作如下 ：`));
             ls = spawn('npm',['uninstall',this.packageName],{cwd:this.currentPath})
