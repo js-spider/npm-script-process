@@ -1,5 +1,5 @@
 # npm-script-process
-####     show npm script lifecycle event 
+#### show npm script lifecycle event 
 
 ### install
 ```
