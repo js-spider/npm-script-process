@@ -1,7 +1,7 @@
 
 module.exports = {
     prepublish: 'Run BEFORE the package is packed and published, as well as on local npm install without any arguments.',
-    prepare: 'Run both BEFORE the package is packed and published, on local npm install without any arguments, and when installing git dependencies. This is run AFTER prepublish, but BEFORE prepublishOnly.',
+    prepare: 'Run both BEFORE the package is packed and published, on local npm install without any arguments,and when installing git dependencies.This is run AFTER prepublish,but BEFORE prepublishOnly',
     prepublishOnly: 'Run BEFORE the package is prepared and packed, ONLY on npm publish.',
     prepack: 'run BEFORE a tarball is packed (on npm pack, npm publish, and when installing git dependencies)',
     postpack: 'Run AFTER the tarball has been generated and moved to its final destination.',

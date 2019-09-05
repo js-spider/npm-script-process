@@ -5,6 +5,11 @@ const minimist = require('minimist');
 const resolve = require('resolve');
 const { spawn } = require('child_process');
 
+
+function space(str, len) {
+    return new Array(Math.max(1, len - str.length)).join(' ');
+}
+
 class Npmscript{
     constructor(argv){
         this.env = argv.env;
@@ -37,11 +42,8 @@ class Npmscript{
                 if(data && data.startsWith('npm-script')){
                     const arr = data.split('--');
                     const type = arr[0].split('>>')[1].trim();
-                    if(type === this.env[0]){
-                        console.log(' ✔  stdout: ',chalk.bgBlue(`${chalk.green(arr[0])}${chalk.gray(arr[1])}`));
-                    }else{
-                        console.log('    stdout: ',`${chalk.green(arr[0])}${chalk.gray(arr[1])}` );
-                    }
+                    const stdOut = type === this.env[0] ? ' ✔  stdout: ' : '    stdout: ';
+                    console.log(stdOut,`${chalk.green(arr[0])}${space(type,15)}${chalk.gray(arr[1])}`);
                 }
             });
             ls.stderr.on('data', (data) => {
