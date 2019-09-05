@@ -38,9 +38,9 @@ class Npmscript{
                     const arr = data.split('--');
                     const type = arr[0].split('>>')[1].trim();
                     if(type === this.env[0]){
-                        console.log('stdout: ',chalk.bgBlue(`${chalk.green(arr[0])}${chalk.gray(arr[1])}`));
+                        console.log(' ✔  stdout: ',chalk.bgBlue(`${chalk.green(arr[0])}${chalk.gray(arr[1])}`));
                     }else{
-                        console.log('stdout: ',`${chalk.green(arr[0])}${chalk.gray(arr[1])}` );
+                        console.log('    stdout: ',`${chalk.green(arr[0])}${chalk.gray(arr[1])}` );
                     }
                 }
             });
