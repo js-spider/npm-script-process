@@ -44,3 +44,8 @@ $ ns install
 子进程退出，退出码 0
 
 ```
+
+```
+ **  查看卸载命令相关 event  可使用 ns destory
+ 
+```
