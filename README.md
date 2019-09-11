@@ -10,7 +10,11 @@ npm install @js-spider/npm-script-process
 ### use
 
 ```
- ns install xxx  or npmscript install xxx
+ $ mkdir newProject && cd newProject && npm init -y
+ 
+ $ npm install @js-spider/npm-script-process
+ 
+ $ ns install xxx  or npmscript install xxx
 
 ```
 
