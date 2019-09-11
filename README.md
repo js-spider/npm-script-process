@@ -45,7 +45,6 @@ $ ns install
 
 ```
 
-```
+
  **  查看卸载命令相关 event  可使用 ns destory
- 
-```
+
